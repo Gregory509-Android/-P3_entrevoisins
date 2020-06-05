@@ -1,50 +1,144 @@
+
+
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layout_weight="match_parent"
-    android:orientation="vertical">
+    xmlns:app="http://schemas.android.com/apk/res-auto">
 
-    <TextView
-        android:id="@+id/activity_details_neighbour_txt_name"
+    <!-- Block 1 -->
+    <RelativeLayout
+        android:id="@+id/activity_details_neighbour_rela_picture"
         android:layout_width="match_parent"
         android:layout_height="280dp"
-        android:background="@color/design_default_color_primary"
-        android:text="NZALA MPANDU"
-        android:textSize="11sp"
-        />
+        android:background="@color/design_default_color_primary">
 
-    <TextView
-        android:id="@+id/activity_details_neighbour_txt_contact"
+        <ImageView
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:src="@drawable/ic_arrow_left"
+            android:tint="@color/white"
+            android:layout_margin="10dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Caroline"
+            android:textSize="34sp"
+            android:layout_alignParentBottom="true"
+            android:layout_margin="10dp"
+            android:textColor="@color/white" />
+    </RelativeLayout>
+
+    <!-- Block 2 -->
+    <android.support.v7.widget.CardView
+        android:id="@+id/activity_details_neighbour_card_contact"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/activity_details_neighbour_rela_picture"
+        android:layout_margin="20dp"
+        android:padding="85dp"
+        android:background="@color/brown"
+        app:cardCornerRadius="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Caroline"
+                android:textSize="22dp"
+                android:textColor="@color/black"
+                android:layout_margin="10dp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#D3D3D3	" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Saint pierre du mont 5km"
+                android:layout_margin="10dp"
+                android:gravity="center_vertical"
+                android:drawableLeft="@drawable/ic_map_marker"
+                android:drawablePadding="10dp"
+                android:drawableTint="@color/pink"/>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="06 27 86 95 93"
+                android:layout_margin="10dp"
+                android:gravity="center_vertical"
+                android:drawableLeft="@drawable/ic_phone"
+                android:drawablePadding="10dp"
+                android:drawableTint="@color/pink"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="www.facebook.fr/nsemi"
+                android:layout_margin="10dp"
+                android:gravity="center_vertical"
+                android:drawableLeft="@drawable/ic_web"
+                android:drawablePadding="10dp"
+                android:drawableTint="@color/pink"/>
+
+
+
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+    <!-- Block 3 -->
+    <android.support.v7.widget.CardView
+        android:id="@+id/activity_details_neighbour_card_aboutme"
         android:layout_width="match_parent"
         android:layout_height="179dp"
-        android:layout_below="@id/activity_details_neighbour_txt_name"
-        android:layout_marginTop="28dp"
+        android:layout_below="@id/activity_details_neighbour_card_contact"
+        android:layout_margin="20dp"
         android:padding="65dp"
         android:background="@color/colorPrimary"
-        android:text="LUKENGO"
-        />
+        app:cardCornerRadius="10dp">
 
-    <TextView
-        android:id="@+id/activity_details_neighbour_txt_aboutme"
-        android:layout_width="match_parent"
-        android:layout_height="179dp"
-        android:layout_below="@id/activity_details_neighbour_txt_contact"
-        android:layout_marginTop="28dp"
-        android:padding="65dp"
-        android:background="@color/colorPrimary"
-        android:text="NSEMI"
-        />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="A propos de moi"
+            android:textSize="22dp"
+            android:textColor="@color/black"
+            android:layout_margin="10dp" />
 
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:background="#D3D3D3	" />
 
-    <Button
-        android:id="@+id/activity_details_neighbour_txt_play"
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="39dp"
+            android:text="Bonjour! Je souhaiterais faire de la marche nordique.Pas initiée, je recherche une ou plusieurs personnes sucesptible de m'accompagner! J'aime les jeux de cartes tels que la belotte et le tarot...  "
+            android:layout_marginTop="-25dp"
+            android:layout_marginLeft="56dp"/>
+
+    </android.support.v7.widget.CardView>
+
+    <android.support.design.widget.FloatingActionButton
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="ZULU MAKEBA"
+        android:src="@drawable/ic_star_white_24dp"
+        android:tint="@color/jaune"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/activity_details_neighbour_rela_picture"
+        android:layout_marginTop="-24dp" />
 
-        />
+
+
 
 </RelativeLayout>
-
