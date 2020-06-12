@@ -28,17 +28,17 @@ public class DetailsNeighbourActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_details_neighbour);
 
-       mRelaArrow = (ImageView) findViewById(R.id.activity_details_neighbour_rela_arrow );
-       mRelaText = (TextView) findViewById(R.id.activity_details_neighbour_rela_text);
-       mRelaText1 = (TextView) findViewById(R.id.activity_details_neighbour_card_text1);
-       mCardView1 = (View) findViewById(R.id.activity_details_neighbour_card_view1);
-       mRelaText2 = (TextView) findViewById(R.id.activity_details_neighbour_card_text2);
-       mRelaText3 = (TextView) findViewById(R.id.activity_details_neighbour_card_text3);
-       mRelaText4 = (TextView) findViewById(R.id.activity_details_neighbour_card_text4);
-       mRelaText5 = (TextView) findViewById(R.id.activity_details_neighbour_card_text5);
-       mCardView2 = (View) findViewById(R.id.activity_details_neighbour_card_view2);
-       mRelaText6 = (TextView) findViewById(R.id.activity_details_neighbour_card_text6);
-       mFloatButton1 = (Button) findViewById(R.id.activity_details_neighbour_float_button1);
+       mRelaArrow = findViewById(R.id.activity_details_neighbour_rela_arrow );
+       mRelaText = findViewById(R.id.activity_details_neighbour_rela_text);
+       mRelaText1 = findViewById(R.id.activity_details_neighbour_card_text1);
+       mCardView1 = findViewById(R.id.activity_details_neighbour_card_view1);
+       mRelaText2 = findViewById(R.id.activity_details_neighbour_card_text2);
+       mRelaText3 = findViewById(R.id.activity_details_neighbour_card_text3);
+       mRelaText4 = findViewById(R.id.activity_details_neighbour_card_text4);
+       mRelaText5 = findViewById(R.id.activity_details_neighbour_card_text5);
+       mCardView2 = findViewById(R.id.activity_details_neighbour_card_view2);
+       mRelaText6 = findViewById(R.id.activity_details_neighbour_card_text6);
+       mFloatButton1 = findViewById(R.id.activity_details_neighbour_float_button1);
     }
 }
 
