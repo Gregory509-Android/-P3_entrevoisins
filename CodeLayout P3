@@ -1,5 +1,3 @@
-
-
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
@@ -14,12 +12,15 @@
         android:background="@color/design_default_color_primary">
 
         <ImageView
+            android:id="@+id/activity_details_neighbour_rela_arrow"
             android:layout_width="36dp"
             android:layout_height="36dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="10dp"
             android:src="@drawable/ic_arrow_left"
-            android:tint="@color/white"
-            android:layout_margin="10dp" />
+            android:tint="@color/white" />
         <TextView
+            android:id="@+id/activity_details_neighbour_rela_text"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Caroline"
@@ -45,6 +46,7 @@
             android:layout_height="match_parent"
             android:orientation="vertical">
             <TextView
+                android:id="@+id/activity_details_neighbour_card_text1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Caroline"
@@ -53,11 +55,13 @@
                 android:layout_margin="10dp" />
 
             <View
+                android:id="@+id/activity_details_neighbour_card_view1"
                 android:layout_width="match_parent"
                 android:layout_height="1dp"
                 android:background="#D3D3D3	" />
 
             <TextView
+                android:id="@+id/activity_details_neighbour_card_text2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Saint pierre du mont 5km"
@@ -69,6 +73,7 @@
 
 
             <TextView
+                android:id="@+id/activity_details_neighbour_card_text3"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="06 27 86 95 93"
@@ -79,6 +84,7 @@
                 android:drawableTint="@color/pink"/>
 
             <TextView
+                android:id="@+id/activity_details_neighbour_card_text4"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="www.facebook.fr/nsemi"
@@ -99,37 +105,44 @@
     <android.support.v7.widget.CardView
         android:id="@+id/activity_details_neighbour_card_aboutme"
         android:layout_width="match_parent"
-        android:layout_height="179dp"
+        android:layout_height="wrap_content"
         android:layout_below="@id/activity_details_neighbour_card_contact"
         android:layout_margin="20dp"
         android:padding="65dp"
         android:background="@color/colorPrimary"
         app:cardCornerRadius="10dp">
-
-        <TextView
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="A propos de moi"
-            android:textSize="22dp"
-            android:textColor="@color/black"
-            android:layout_margin="10dp" />
+            android:orientation="vertical">
 
-        <View
-            android:layout_width="wrap_content"
-            android:layout_height="1dp"
-            android:background="#D3D3D3	" />
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="39dp"
-            android:text="Bonjour! Je souhaiterais faire de la marche nordique.Pas initiée, je recherche une ou plusieurs personnes sucesptible de m'accompagner! J'aime les jeux de cartes tels que la belotte et le tarot...  "
-            android:layout_marginTop="-25dp"
-            android:layout_marginLeft="56dp"/>
+            <TextView
+                android:id="@+id/activity_details_neighbour_card_text5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="A propos de moi"
+                android:textSize="22dp"
+                android:textColor="@color/black"
+                android:layout_margin="10dp" />
 
+            <View
+                android:id="@+id/activity_details_neighbour_card_view2"
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"
+                android:background="#D3D3D3	" />
+
+            <TextView
+                android:id="@+id/activity_details_neighbour_card_text6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Bonjour! Je souhaiterais faire de la marche nordique.Pas initiée, je recherche une ou plusieurs personnes sucesptible de m'accompagner! J'aime les jeux de cartes tels que la belotte et le tarot...  "
+                android:layout_margin="10dp"/>
+        </LinearLayout>
     </android.support.v7.widget.CardView>
 
     <android.support.design.widget.FloatingActionButton
+        android:id="@+id/activity_details_neighbour_float_button1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:src="@drawable/ic_star_white_24dp"
