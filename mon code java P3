@@ -51,12 +51,18 @@ public class DetailsNeighbourActivity extends AppCompatActivity {
         String name = i.getStringExtra("name");
         String url = i.getStringExtra("url");
         String previous = i.getStringExtra("previous");
+        String address = i.getStringExtra("address");
+        String aboutme = i.getStringExtra("aboutme");
+        String phonenumber = i.getStringExtra("phonenumber");
         System.out.println( name );
         System.out.println( url );
         System.out.println( previous );
         mTxtName.setText(name);
         mTxtfacebook.setText("http://www.facebook.com/" + name);
         mTxtName2.setText(name);
+        mTxtadresse.setText(address);
+        mTxtapropos.setText(aboutme);
+        mTxtnumber.setText(phonenumber);
 
         Glide.with(this)
                 .load(url)
